@@ -19,7 +19,9 @@ jobs:
         run: chmod +x gradlew
 
       - name: Start SUT
-        run: java -jar ./artifacts/app-mbank.jar &
+        run: |
+          java -jar ./artifacts/app-mbank.jar &
+          sleep 10
 
       - name: Run tests with Gradle
         run: ./gradlew test
