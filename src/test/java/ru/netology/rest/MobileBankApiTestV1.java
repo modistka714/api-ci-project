@@ -2,6 +2,7 @@ package ru.netology.rest;
 
 import org.junit.jupiter.api.Test;
 import io.restassured.RestAssured;
+
 import static io.restassured.module.jsonschema.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 class MobileBankApiTestV1 {
